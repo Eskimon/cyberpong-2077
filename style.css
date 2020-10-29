@@ -20,6 +20,12 @@ div {
   background-color: var(--color-board);
 }
 
+#title {
+  margin: auto;
+  height: 250px;
+  display: block;
+}
+
 .footer {
   background-color: transparent;
   bottom: 0;
@@ -119,7 +125,7 @@ button#start {
 
 .crt {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 250px);
   background-color: transparent;
 }
 
@@ -235,7 +241,7 @@ button#start {
   opacity: 0;
 }
 
-.splash {
+#splash {
   position: absolute;
   z-index: 15;
   top: calc(50% - 160px);

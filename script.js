@@ -4,6 +4,10 @@ var LINE_WIDTH = 10;
 var PADDLE_LENGTH = 100;
 var OFFSET_Y = document.getElementById('board').offsetTop + 1;
 
+var backplayer = document.getElementById('backplayer');
+var boingplayer = document.getElementById('boingplayer');
+
+
 function makeRect(x, y, width, height, bgcolor, classes) {
   var elem = document.createElement("div");
 
@@ -261,6 +265,7 @@ window.onload = function () {
       movePlayer1(evt.clientY - OFFSET_Y);
     });
   }
+
 };
 
 
@@ -329,6 +334,10 @@ function updateGame(delta) {
           state = gameOver;
         }
       }
+    } else {
+      try {
+        boingplayer.play();
+      } catch (error) {}
     }
   }
 
@@ -386,6 +395,15 @@ function start() {
   timer = setInterval(timerTick, 33); //roughly 30 FPS  (1000 / 30) = 33
 }
 
+function splash() {
+  var splash = document.getElementById('splash');
+  splash.classList.add("hide");
+  try {
+    backplayer.play();
+  } catch (error) {
+  }
+}
+
 /* Konami code handling */
 
 // a key map of allowed keys
@@ -434,9 +452,3 @@ function activateCheats() {
     elmt.classList.remove("show");
   }, 4000);
 }
-
-/* splash screen */
-
-setTimeout(() => {
-
-})
