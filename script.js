@@ -247,7 +247,7 @@ window.onload = function () {
     PADDLE_LENGTH,
     'paddle-right');
 
-  
+
   if (navigator.userAgent.indexOf("iPad") != -1 ||
     navigator.userAgent.indexOf("iPod") != -1 ||
     navigator.userAgent.indexOf("iPhone") != -1 ||
@@ -398,6 +398,9 @@ function start() {
 function splash() {
   var splash = document.getElementById('splash');
   splash.classList.add("hide");
+  setTimeout(() => {
+    splash.style.display = "none";
+  }, 1000);
   try {
     backplayer.play();
   } catch (error) {
