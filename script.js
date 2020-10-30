@@ -400,7 +400,7 @@ function splash() {
   splash.classList.add("hide");
   setTimeout(() => {
     splash.style.display = "none";
-  }, 1000);
+  }, 800);
   try {
     backplayer.play();
   } catch (error) {
