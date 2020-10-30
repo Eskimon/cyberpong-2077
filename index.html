@@ -11,43 +11,47 @@
 <body>
   <audio id="backplayer" src="assets/CHRISRGMFB – Grid Run [Synthwave].mp3" loop></audio>
   <audio id="boingplayer" src="assets/boing.mp3"></audio>
-
-  <img id="title" src="assets/cyberpong.png">
   <img id="splash" onclick="splash()" src="assets/splash.png">
 
-  <div id="board">
-    <div id="divider"></div>
-    <div id="score1" class="score">0</div>
-    <div id="score2" class="score">0</div>
-    <div id="status" class="score">Ready</div>
+  <div class="main">
+    <img id="title" src="assets/cyberpong.png">
 
-    <img id="konami" class="" src="assets/keanu.gif">
+    <div class="wrapper">
+      <div id="board">
+        <div id="divider"></div>
+        <div id="score1" class="score">0</div>
+        <div id="score2" class="score">0</div>
+        <div id="status" class="score">Ready</div>
 
-    <button onclick="start()" id="start">Start</button>
-  </div>
+        <img id="konami" class="" src="assets/keanu.gif">
 
-  <div class="crt"></div>
+        <button onclick="start()" id="start">Start</button>
 
-  <div class="footer">
-    <p>
-      This purely parodic game made for your enjoyment is by no mean to be considered as an insult.
-    </p>
-    <p>
-      Thanks to <a href="https://www.youtube.com/watch?v=WjO-cJCdTPk">CHRISRGMFB</a> for the music, to <a href="https://github.com/capnmidnight/JS_Game_Programming_Class">capnmidnight</a> for the base pong code,
-      and Keanu Reeves for being breathtaking.
-    </p>
-    <p>
-      Also special thanks to
-      <a href="https://twitter.com/Eskimon_fr" title="Eskimon's Twitter">Eskimon</a> for the code,
-      <a href="https://twitter.com/vivilounet" title="vivilounet's Twitter">vivilounet</a> for the graphics
-      and also
-      asty,
-      <a href="https://www.reddit.com/user/BwonOrun" title="BwonOrun on reddit">BwonOrun</a>,
-      <a href="https://twitter.com/NodokaMurmevent" title="Nodoka's Twitter">Nodoka</a>,
-      <a href="https://twitter.com/Patat0r" title="Patat0r's Twitter">Patat0r</a>,
-      and
-      titusbinus!
-    </p>
+        <div class="crt"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This purely parodic game made for your enjoyment is by no mean to be considered as an insult.
+      </p>
+      <p>
+        Thanks to <a href="https://www.youtube.com/watch?v=WjO-cJCdTPk" target="_blank">CHRISRGMFB</a> for the music, to <a href="https://github.com/capnmidnight/JS_Game_Programming_Class" target="_blank">capnmidnight</a> for the base pong code,
+        and Keanu Reeves for being breathtaking.
+      </p>
+      <p>
+        Also special thanks to
+        <a href="https://twitter.com/Eskimon_fr" title="Eskimon's Twitter" target="_blank">Eskimon</a> for the code,
+        <a href="https://www.instagram.com/vivilounet/" title="vivilounet's Instagram" target="_blank">vivilounet</a> for the graphics
+        and also
+        asty,
+        <a href="https://www.reddit.com/user/BwonOrun" title="BwonOrun on reddit" target="_blank">BwonOrun</a>,
+        <a href="https://twitter.com/NodokaMurmevent" title="Nodoka's Twitter" target="_blank">Nodoka</a>,
+        <a href="https://twitter.com/Patat0r" title="Patat0r's Twitter" target="_blank">Patat0r</a>,
+        and
+        titusbinus!
+      </p>
+    </div>
   </div>
 
   <script src="script.js"></script>
