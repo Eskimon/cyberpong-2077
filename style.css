@@ -243,8 +243,9 @@ button#start {
 
 #splash {
   position: absolute;
-  z-index: 15;
-  top: calc(50% - 160px);
-  left: calc(50% - 160px);
+  z-index: 50;
+  top: calc(50% - 280px);
+  left: calc(50% - 600px);
   transition: opacity 1s;
+  width: 1200px;
 }
